@@ -1,0 +1,32 @@
+{
+  "config.json": {
+    "debug": "Messages de diagnostic dans la console.",
+    "commandes": "Commandes du plugin : nom, alias et permission (vide = tout le monde).",
+    "commandes.authlobby": "Commande lancée par les boutons des écrans (Se connecter, S'enregistrer). Les joueurs n'ont pas à la taper.",
+    "commandes.koriaauthlobby": "Administration : /koriaauthlobby config et reload.",
+    "ecrans": "Écrans KoriaMC affichés aux joueurs non connectés (fichiers koriamc/guis/<nom>.json).",
+    "ecrans.connexion": "Écran de connexion (joueur déjà inscrit : mot de passe).",
+    "ecrans.inscription": "Écran d'inscription (première venue : mot de passe deux fois).",
+    "ecrans.code": "Mot de passe oublié : écran où le joueur tape le code reçu par mail.",
+    "ecrans.nouveau-mot-de-passe": "Mot de passe oublié : écran du nouveau mot de passe (deux fois), après le code.",
+    "ecrans.installer-layouts": "Installe les écrans par défaut dans koriamc/guis/ s'ils n'y sont pas (jamais écrasés).",
+    "attente": "Délais d'attente à l'arrivée d'un joueur.",
+    "attente.client-ticks": "Temps laissé au client KoriaMC pour se présenter avant de passer au chat (/login, /register), en ticks.",
+    "attente.proxy-secondes": "Sans réponse du proxy (KoriaAuth absent), le joueur est libéré après ce délai.",
+    "cecite": "Cécité tant que le joueur n'est pas connecté.",
+    "titres": "Durées des titres, en ticks.",
+    "sons": "Sons joués (SON:volume:hauteur, vide = aucun).",
+    "sons.erreur": "Mot de passe refusé.",
+    "sons.connecte": "Connexion réussie.",
+    "titres.apparition": "Apparition du titre.",
+    "titres.duree": "Temps d'affichage du titre.",
+    "titres.disparition": "Disparition du titre.",
+    "sons.clic-menu": "Clic dans l'éditeur de configuration."
+  },
+  "messages.json": {
+    "prefix": "Préfixe ajouté aux messages ({prefix})."
+  },
+  "menus.json": {
+    "editeur": "Apparence de l'éditeur de configuration (/koriaauthlobby config)."
+  }
+}

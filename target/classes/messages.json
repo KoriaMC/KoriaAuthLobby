@@ -1,0 +1,72 @@
+{
+  "prefix": "&8[&6Koria&8] &r",
+  "general": {
+    "no-permission": "{prefix}&cVous n'avez pas la permission.",
+    "players-only": "{prefix}&cCette commande est réservée aux joueurs.",
+    "unknown-command": "{prefix}&cCommande inconnue. Faites &f/{label} help&c.",
+    "usage": "{prefix}&cUsage : &f/{label} {usage}",
+    "error": "{prefix}&cUne erreur est survenue, prévenez un administrateur.",
+    "unknown-player": "{prefix}&cJoueur introuvable : &f{player}",
+    "invalid-number": "{prefix}&c« {input} » n'est pas un nombre valide.",
+    "save-error": "{prefix}&cImpossible d'enregistrer {file} : {error}",
+    "reload-done": "{prefix}&aConfiguration rechargée.",
+    "reload-problems": "{prefix}&c{count} problème(s) détecté(s) :",
+    "reload-problem": "&8- &c{problem}"
+  },
+  "help": {
+    "admin": [
+      "{prefix}&6KoriaAuthLobby &7- écrans de connexion",
+      "&e/{command} config [fichier] &7: modifier la configuration en jeu",
+      "&e/{command} reload &7: recharger la configuration",
+      "&7Comptes et mots de passe : sur le proxy (/koriaauth)."
+    ],
+    "commands": {
+      "authlobby": {
+        "usage": "<login|register> ...",
+        "description": "Boutons des écrans de connexion (pas pour les joueurs)."
+      },
+      "koriaauthlobby": {
+        "usage": "[config|reload]",
+        "description": "Administration de KoriaAuthLobby."
+      }
+    }
+  },
+  "config-editor": {
+    "cancel-word": "annuler",
+    "empty-word": "vide",
+    "prompt": "{prefix}&eÉcrivez la nouvelle valeur de &f{path} &edans le chat (&f{empty} &epour une valeur vide, &f{cancel} &epour annuler).",
+    "prompt-current": "&7Valeur actuelle : &f",
+    "prompt-list-add": "{prefix}&eÉcrivez la valeur à ajouter à &f{path} &e(&f{cancel} &epour annuler).",
+    "prompt-list-replace": "{prefix}&eÉcrivez toutes les valeurs de &f{path}&e, séparées par des virgules (&f{cancel} &epour annuler).",
+    "prompt-add": "{prefix}&eÉcrivez le nom de la nouvelle entrée de &f{path} &e(&f{cancel} &epour annuler).",
+    "cancelled": "{prefix}&7Modification annulée.",
+    "saved": "{prefix}&a{file} : &f{path} &a= &f{value}",
+    "reset": "{prefix}&a{file} : &f{path} &areprend sa valeur par défaut.",
+    "removed": "{prefix}&a{file} : &f{path} &asupprimé.",
+    "added": "{prefix}&a{file} : &f{path} &aajouté.",
+    "confirm-remove": "{prefix}&eRefaites Ctrl + Q dans les 5 secondes pour confirmer (&f{path}&e).",
+    "invalid-number": "{prefix}&c« {input} » n'est pas un nombre.",
+    "invalid-key": "{prefix}&cNom invalide : lettres, chiffres, - _ et : uniquement.",
+    "exists": "{prefix}&cL'entrée &f{key} &cexiste déjà.",
+    "empty-section": "{prefix}&cSection vide : ajoutez la première entrée dans le fichier.",
+    "save-error": "{prefix}&cImpossible d'enregistrer {file} : {error}",
+    "restart": "{prefix}&eCe réglage sera appliqué au prochain redémarrage du serveur.",
+    "unknown-file": "{prefix}&cFichier inconnu : &f{file}&c. Fichiers : config, messages, menus."
+  },
+  "values": {
+    "yes-text": "&aOui",
+    "no-text": "&cNon",
+    "none": "aucune",
+    "free": "&aGratuit",
+    "per-world": "un spawn par monde (spawn du serveur pour les autres)",
+    "global-only": "un seul spawn pour tout le serveur"
+  },
+  "time": {
+    "days": "j",
+    "hours": "h",
+    "minutes": "min",
+    "seconds": "s",
+    "now": "maintenant",
+    "never": "jamais"
+  }
+}

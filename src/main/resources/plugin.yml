@@ -1,0 +1,22 @@
+name: KoriaAuthLobby
+version: ${project.version}
+main: fr.koriamc.authlobby.KoriaAuthLobby
+author: KoriaMC
+description: ${project.description}
+
+# Les commandes (/authlobby pour les boutons des écrans, /koriaauthlobby pour l'administration) sont
+# enregistrées dynamiquement depuis config.json : elles ne sont donc pas déclarées ici.
+
+permissions:
+  koriaauthlobby.admin:
+    description: Administration de KoriaAuthLobby
+    default: op
+    children:
+      koriaauthlobby.admin.config: true
+      koriaauthlobby.admin.reload: true
+  koriaauthlobby.admin.config:
+    description: Éditeur de configuration en jeu (/koriaauthlobby config)
+    default: op
+  koriaauthlobby.admin.reload:
+    description: Recharger la configuration (/koriaauthlobby reload)
+    default: op

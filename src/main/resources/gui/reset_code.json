@@ -1,0 +1,197 @@
+{
+  "type": "SCREEN",
+  "note": "Mot de passe oublié, étape 1 : code reçu par mail (plugin KoriaAuthLobby, v1). Textures : koriamc:textures/gui/login.png, cadre_vierge.png. Variables : %var_auth_joueur%, %var_auth_erreur% (+ %var_auth_erreur_oui%), %var_auth_essais%, %var_auth_temps% (secondes restantes), %var_auth_longueur_min%, %var_auth_info% (e-mail masqué), %var_auth_commande%.",
+  "width": 172,
+  "height": 214,
+  "anchor": "CENTER",
+  "scaleMode": "ADAPT",
+  "referenceWidth": 520,
+  "referenceHeight": 320,
+  "background": "#B0000000",
+  "blur": true,
+  "closeOnEscape": false,
+  "openSound": "random.pop",
+  "closeSound": "",
+  "openAnimation": "ZOOM",
+  "animationDuration": 260,
+  "elements": [
+    {
+      "type": "IMAGE",
+      "id": "fond",
+      "x": 0,
+      "y": 0,
+      "width": 172,
+      "height": 214,
+      "source": "koriamc:textures/gui/login.png",
+      "regionX": 89,
+      "regionY": 152,
+      "regionWidth": 877,
+      "regionHeight": 1089,
+      "smooth": true
+    },
+    {
+      "type": "TEXT",
+      "id": "titre",
+      "x": 26,
+      "y": 80,
+      "width": 120,
+      "height": 7,
+      "scale": 0.6,
+      "text": "&eMot de passe oublié",
+      "align": "CENTER"
+    },
+    {
+      "type": "TEXT",
+      "id": "consigne",
+      "x": 21,
+      "y": 89,
+      "width": 130,
+      "height": 6,
+      "scale": 0.42,
+      "text": "&7Code envoyé à &f%var_auth_info%",
+      "align": "CENTER"
+    },
+    {
+      "type": "INPUT",
+      "id": "code",
+      "x": 61,
+      "y": 105,
+      "width": 56,
+      "height": 12,
+      "variable": "auth_code",
+      "hint": "Code à 6 chiffres",
+      "maxLength": 6,
+      "password": false,
+      "localOnly": true,
+      "submitOnEnter": true,
+      "scale": 0.75,
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "focusBorderColor": "#00000000",
+      "borderWidth": 0,
+      "textColor": "#FFFFF1C8",
+      "hintColor": "#80E6C895",
+      "actions": [
+        "command: %var_auth_commande% code %local_auth_code%"
+      ],
+      "filter": "INTEGER",
+      "autoFocus": true
+    },
+    {
+      "type": "IMAGE",
+      "id": "valider",
+      "x": 36,
+      "y": 129,
+      "width": 100,
+      "height": 23,
+      "source": "koriamc:textures/gui/cadre_vierge.png",
+      "regionX": 20,
+      "regionY": 116,
+      "regionWidth": 2132,
+      "regionHeight": 497,
+      "smooth": true
+    },
+    {
+      "type": "TEXT",
+      "id": "valider_texte",
+      "x": 40,
+      "y": 137,
+      "width": 92,
+      "height": 8,
+      "scale": 0.95,
+      "text": "&6&lVALIDER",
+      "align": "CENTER"
+    },
+    {
+      "type": "RECT",
+      "id": "valider_clic",
+      "x": 38,
+      "y": 131,
+      "width": 96,
+      "height": 19,
+      "color": "#00000000",
+      "hoverColor": "#30FFF1C8",
+      "radius": 4,
+      "clickSound": true,
+      "actions": [
+        "command: %var_auth_commande% code %local_auth_code%"
+      ]
+    },
+    {
+      "type": "TEXT",
+      "id": "renvoyer",
+      "x": 26,
+      "y": 156,
+      "width": 58,
+      "height": 6,
+      "scale": 0.45,
+      "text": "&7&nRenvoyer le code",
+      "align": "CENTER"
+    },
+    {
+      "type": "RECT",
+      "id": "renvoyer_clic",
+      "x": 26,
+      "y": 155,
+      "width": 58,
+      "height": 7,
+      "color": "#00000000",
+      "hoverColor": "#20FFFFFF",
+      "radius": 2,
+      "clickSound": true,
+      "actions": [
+        "command: %var_auth_commande% oublie"
+      ]
+    },
+    {
+      "type": "TEXT",
+      "id": "retour",
+      "x": 90,
+      "y": 156,
+      "width": 56,
+      "height": 6,
+      "scale": 0.45,
+      "text": "&7&nRetour",
+      "align": "CENTER"
+    },
+    {
+      "type": "RECT",
+      "id": "retour_clic",
+      "x": 90,
+      "y": 155,
+      "width": 56,
+      "height": 7,
+      "color": "#00000000",
+      "hoverColor": "#20FFFFFF",
+      "radius": 2,
+      "clickSound": true,
+      "actions": [
+        "command: %var_auth_commande% retour"
+      ]
+    },
+    {
+      "type": "TEXT",
+      "id": "erreur",
+      "x": 21,
+      "y": 164,
+      "width": 130,
+      "height": 9,
+      "scale": 0.45,
+      "text": "&c%var_auth_erreur%",
+      "align": "CENTER",
+      "wrap": true,
+      "condition": "%var_auth_erreur_oui% == true"
+    },
+    {
+      "type": "TEXT",
+      "id": "infos",
+      "x": 21,
+      "y": 175,
+      "width": 130,
+      "height": 5,
+      "scale": 0.4,
+      "text": "&7%var_auth_essais% essai(s) &8· &7%var_auth_temps% s",
+      "align": "CENTER"
+    }
+  ]
+}

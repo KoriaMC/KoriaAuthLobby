@@ -1,0 +1,41 @@
+{
+  "debug": false,
+  "commandes": {
+    "authlobby": {
+      "actif": true,
+      "nom": "authlobby",
+      "alias": [],
+      "permission": ""
+    },
+    "koriaauthlobby": {
+      "actif": true,
+      "nom": "koriaauthlobby",
+      "alias": [
+        "kalobby"
+      ],
+      "permission": ""
+    }
+  },
+  "ecrans": {
+    "connexion": "login",
+    "inscription": "register",
+    "code": "reset_code",
+    "nouveau-mot-de-passe": "reset_password",
+    "installer-layouts": true
+  },
+  "attente": {
+    "client-ticks": 60,
+    "proxy-secondes": 15
+  },
+  "cecite": true,
+  "titres": {
+    "apparition": 5,
+    "duree": 40,
+    "disparition": 10
+  },
+  "sons": {
+    "erreur": "VILLAGER_NO:0.8:1",
+    "connecte": "LEVEL_UP:0.7:1.2",
+    "clic-menu": "CLICK:0.5:1"
+  }
+}
